@@ -25,7 +25,7 @@ Eclipse Integration
   http://wiki.eclipse.org/EGit/User_Guide
   http://wiki.eclipse.org/EGit/Git_For_Eclipse_Users
   http://wiki.eclipse.org/EGit/User_Guide#Create_Repository_at_GitHub
-
+  http://wiki.eclipse.org/EGit/User_Guide#Working_with_remote_Repositories
 
 Benötigte Plugins
 ---------------------------------------
@@ -81,6 +81,16 @@ vorhandenen Eintrag auswählen
 Daily work
 =================================
 http://wiki.eclipse.org/EGit/User_Guide#Working_with_remote_Repositories
+
+
+Die Konfiguration der Repositories mit Fetch/Pull-Konfigurationen erfolgt über die "Git Repositories"-View
+
+Empfohlene Konfiguration
+------------------------------------------------------------------
+origin: Eigenes Repository mit Fetch und Pull-Konfiguration
+central: Verweis auf das Ursprungs-Repository (http://github.com/jschneider/com.cedarsoft.otec.git) mit Fetch-Konfiguration
+
+
 
 Fetch/Merge
 ---------------------------------------
