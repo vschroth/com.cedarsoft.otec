@@ -29,14 +29,12 @@ Eclipse Integration
 
 Benötigte Plugins
 ---------------------------------------
-
 EGit (http://www.eclipse.org/egit/)
 	Update-Site: http://download.eclipse.org/egit/updates
 
 m2eclipse (http://m2eclipse.sonatype.org/)
 	Update-Site: http://m2eclipse.sonatype.org/sites/m2e
 	Installations-Anleitung: http://m2eclipse.sonatype.org/installing-m2eclipse.html
-
 
 Git Configuration
 -----------------------------------------
@@ -58,7 +56,7 @@ Branches auswählen (master)
 --> Fertigstellen
 
 
-Das Repository wird dann ausgecheckt. Ein Projekt wird aber *nicht* angelegt.
+Der lokale Repository-Clone wird dann erstellt. Ein Projekt wird aber nicht automatisch angelegt.
 
 
 Projekt in Eclipse importieren
@@ -77,8 +75,7 @@ Git
 vorhandenen Eintrag auswählen
 
 
-
-Daily work
+Konfiguration
 =================================
 http://wiki.eclipse.org/EGit/User_Guide#Working_with_remote_Repositories
 
@@ -88,21 +85,32 @@ Die Konfiguration der Repositories mit Fetch/Pull-Konfigurationen erfolgt über 
 Empfohlene Konfiguration
 ------------------------------------------------------------------
 origin: Eigenes Repository mit Fetch und Pull-Konfiguration
+            Source Ref          Destination Ref
+  Fetch:    refs/heads/*        /refs/remotes/origin/*      (alle Branches vom Repository von GitHub werden geholt)
+  Pull:     refs/heads/master   /refs/heads/master          (nur der lokale Master-Branch wird an GitHub übertragen, nicht die Feature-Branches)
+
 central: Verweis auf das Ursprungs-Repository (http://github.com/jschneider/com.cedarsoft.otec.git) mit Fetch-Konfiguration
 
+            Source Ref          Destination Ref
+  Fetch:    refs/heads/*        /refs/remotes/central/*      (alle Branches vom central Repository von GitHub werden geholt)
 
+
+Daily work
+=================================
 
 Fetch/Merge
 ---------------------------------------
-Team --> Fetch From
-Team --> Merge (with origin/master)
+View: Git-Repositories
+central --> Fetch
+origil --> Fetch
 
+(Merge nicht vergessen!)
 
 Feature-Branch erzeugen
 ---------------------------------------
 Team --> Branch --> New Branch {Featurebranch}
 
-Commit
+Commit(s) auf Feature-Branch
 ---------------------------------------
 Team --> Commit
 
@@ -110,31 +118,23 @@ Merge mit Hauptbranch
 ---------------------------------------
 In Hauptbranch wechseln:
   Team --> Branch {Hauptbranch}
-Changes mergen:
+Änderungen in Hauptbranch mergen:
   Team --> Merge {Featurebranch}
 
 Push
 ---------------------------------------
-Team --> Push
-
-
-Fetching changes from central repo
-====================================
-In Eclipse über
-Team --> Fetch From...
-  http://github.com/jschneider/com.cedarsoft.otec.git
-Team --> Merge (with origin/master)
-
-Alternativ über github.com Weboberfläche
-github --> Eigenes Repository --> Fork Queue
+View: Git-Repositories
+origin --> Push
 
 
 Pull Request
 ====================================
 Nach Abschluss der Lösung, bitte einen Pull Request stellen. Bitte insbesondere den Target-Branch beachten.
-Falls noch kein persönlicher Target-Branch vorhanden ist, bitte im Kommentar vermerken.
+Bitte den persönlichen Zielbranch korrekt angeben.
 
-http://help.github.com/pull-requests/
+Erläuterungen:
+  http://help.github.com/pull-requests/
+
 
 
 

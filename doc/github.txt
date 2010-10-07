@@ -11,6 +11,6 @@ Repository Fork erstellen:
 Auf: http://github.com/jschneider/com.cedarsoft.otec
 "Fork"
 
-Dieses Repository dann in Eclipse importieren...
+Dieses Repository dann in Eclipse importiert werden...
 
 
