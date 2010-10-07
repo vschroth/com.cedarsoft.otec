@@ -1,0 +1,58 @@
+Der Ablauf bei der Erstellung einer Lösung für die Aufgaben sollte folgendermaßen aussehen:
+-------------------------------------------------------------------------------------------
+
+Kurzform
+==============================
+- Bereitstellung der Aufgabe im zentralen Git-Repository: github.com/jschneider/com.cedarsoft.otec.git
+- Erstellung der Lösung
+- Bereitstellung der Lösung im eigenen Repository (z.B. github)
+- Stellen eines Pull-Requests (Github oder Mail)
+- Pull in den persönlichen Branch im zentralen Repository.
+
+
+Detaillierte Beschreibung
+==============================
+Die Beschreibung der Aufgabe und die notwendigen Klassen/Resourcen werden zeitnah vor dem Stellen der Aufgabe ins zentrale Git-Repository
+gepusht. Von dort kann der aktuelle Stand dann herunter geladen werden.
+
+Empfehlenswert ist die Erstellung eines Forks bei github.com (Registrierung notwendig).
+
+Alternativ ohne Registrierung über folgende URLs:
+  HTTP: http://github.com/jschneider/com.cedarsoft.otec.git
+  Git: git://github.com/jschneider/com.cedarsoft.otec.git
+
+
+Die gelöste Aufgabe wird dann von jedem Studenten in einem Git-Repository zur Verfügung
+gestellt. Empfehlenswert ist ein eigener Clone auf github.com. Allerdings sind auch andere Repositories möglich, sofern
+zugänglich (z.B. http://gitorious.org/ oder auch selbst gehostet). 
+Sobald die Lösung fertig gestellt ist, wird ein Push-Request gestellt. Ein Push-Request kann entweder automatisch
+(bei github.com über die Weboberfläche) oder manuell erstellt werden.
+Er besteht aus folgenden Informationen:
+Quelle:
+  Repository-URL (http/git)
+  Branch  (in der Regel "master")
+  Hash des Commits
+
+Ziel:
+  persönlicher Branchname im zentralen Repository (1. Buchstabe Nachname + 1./2. Buchstabe Vorname)
+
+Diesen Push-Request dann im Issue-Tracker bei github.com eintragen oder an js@cedarsoft.com senden.
+
+
+In besonderen Ausnahmefällen und mit Begründung ist auch eine Zusendung in anderer Form möglich (z.B. Email an js@cedarsoft.com).
+
+
+Entsprechend des Pull-Requests werden die Änderungen dann nach Bewertung im persönlichen Branch des zentralen Repositories
+zur Verfügung gestellt.
+
+
+Disclaimer bezüglich der Empfehlung von github.com
+==================================================
+GitHub ist inzwischen zum Quasi-Standard für OpenSource-Projekte geworden, die Git als Versionskontrollsystem einsetzen. 
+Eine Registrierung und das Hosting von öffentlichen Repositories ist kostenlos und problemlos möglich. Viele Funktionen
+sind über die Weboberfläche erreichbar und gut dokumentiert. Daher ist diese Plattform gerade für Git-Neueinsteiger eine 
+große Erleichterung.
+Durch die verteilte Natur von git entsteht auch keine Abhängigkeit von github.com, da ja das Repository jeweils komplett vor liegt.
+
+Daher wird der Einsatz von github.com empfohlen. Allerdings soll betont werden, dass dieser nicht verpflichtend ist.
+
