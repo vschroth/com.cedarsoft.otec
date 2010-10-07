@@ -1,0 +1,34 @@
+--------------------------------
+- Übungsaufgabe 1: (10 Punkte) -
+--------------------------------
+
+Zusammenfassung:
+===================
+Für die Darstellung von kaufmännischen Prozessen im Unternehmen sollen die grundlegenden Klassen erstellt werden.
+Die zu erstellenden Klassen sollen dabei folgende Aspekte abdecken:
+
+1. Geldbeträge
+Diese müssen so miteinander verrechnet werden können, dass typische Anwendungsfälle abgedeckt werden können.
+
+2. Währungen
+Im Unternehmen wird mit verschiedene Währungen gerechnet, die eindeutig zuordenbar sind.
+
+3. Wechselkurse
+Es gibt sowohl variable Wechselkurse als auch Wechselkurse, die innerhalb einer prozentualen Bandbreite
+fixiert sind (z.B. 2,25% der Dänischen Krone zum Euro).
+Die Wechselkurse besitzen jeweils einen Ankaufs- und Verkaufskurs.
+
+4. Umrechnungen
+Verschiedene Beträge in verschiedenen Währungen müssen nun miteinander verrechnet werden können.
+
+
+Unit-Tests:
+===================
+Um die Korrektheit der Funktionen zu beweisen, sind ausreichend Unit-Tests zu erstellen.
+
+
+API-Design
+===================
+Da die erstellten Klassen als Grundlage für die weiteren Aufgaben dienen werden, müssten diese entsprechend
+zukunftssicher designt werden. Sie müssen sich leicht warten und erweitern lassen.
+Außerdem sollten sie weitestgehend gegen fehlerhafte Benutzung immun sein.
