@@ -1,0 +1,26 @@
+Bewertung der Aufgaben zur Vorlesung
+--------------------------------------------------------
+
+Berechnung der Noten entsprechend der erreichten Punkte:
+
+Note   Prozentsatz der erreichten Punkte
+1        91 - 100
+2        81 -  90
+3        66 -  80
+4        51 -  65
+NB       <= 50%
+
+
+Der Übungsbetrieb besteht aus zwei Teilen: Wöchentlichen Übungen (60%) und einer selbstgewählten Ausarbeitung (40%).
+
+
+Die Bewertung erfolgt nicht nur anhand der Korrektheit (d.h. ob richtige oder falsche Ergebnisse erzielt werden),
+sondern es wird insbesondere der Programmierstil bewertet.
+
+Kriterien des Stils sind insbesondere
+ - Verständlichkeit
+ - Grad der Objektorientierung
+ - Effizienz
+ - Erweiterbarkeit
+ - Wartbarkeit
+

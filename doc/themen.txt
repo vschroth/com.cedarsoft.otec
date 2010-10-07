@@ -1,0 +1,25 @@
+Folgende Themen werden in der Vorlesung behandelt (subject to change):
+
+2010-10-08: Einführung Objektorientierung
+            (Im)mutability
+2010-10-15: Creational Patterns
+            Factory method/Abstract Factory/Builder
+2010-10-22: Behavioral Patterns I
+            Strategy/Chain of Repsonsibility/Command
+2010-10-29: Encapsulation
+            Composite/Mediator
+2010-11-05: Structural Patterns
+            Decorator/Facade/Wrapper
+2010-11-12: Messaging/Colaboration
+            Observer/Visitor
+2010-11-19: Architektur/Komponenten
+            IoC/MVC
+2010-11-26: Dependency Injection I
+2010-12-03: Dependency Injection II
+2010-12-10: Error/Exception Handling
+            NullObject/Exceptions
+2010-12-17: Vorbereitung selbstgewählte Aufgabe
+            Fluent Interfaces
+2011-01-??: Abnahme/Besprechung
+
+
