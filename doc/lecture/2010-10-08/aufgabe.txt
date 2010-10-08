@@ -24,11 +24,11 @@ Verschiedene Beträge in verschiedenen Währungen müssen nun miteinander verrec
 
 Unit-Tests:
 ===================
-Um die Korrektheit der Funktionen zu beweisen, sind ausreichend Unit-Tests zu erstellen.
+Um die Korrektheit der Funktionen zu belegen, sind ausreichend Unit-Tests zu erstellen.
 
 
 API-Design
 ===================
-Da die erstellten Klassen als Grundlage für die weiteren Aufgaben dienen werden, müssten diese entsprechend
+Da die erstellten Klassen als Grundlage für die weiteren Aufgaben dienen werden, müssen diese entsprechend
 zukunftssicher designt werden. Sie müssen sich leicht warten und erweitern lassen.
-Außerdem sollten sie weitestgehend gegen fehlerhafte Benutzung immun sein.
+Außerdem sollten sie weitgehend gegen fehlerhafte Benutzung immun sein.

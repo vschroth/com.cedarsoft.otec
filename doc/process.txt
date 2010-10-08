@@ -52,7 +52,7 @@ GitHub ist inzwischen zum Quasi-Standard für OpenSource-Projekte geworden, die 
 Eine Registrierung und das Hosting von öffentlichen Repositories ist kostenlos und problemlos möglich. Viele Funktionen
 sind über die Weboberfläche erreichbar und gut dokumentiert. Daher ist diese Plattform gerade für Git-Neueinsteiger eine 
 große Erleichterung.
-Durch die verteilte Natur von git entsteht auch keine Abhängigkeit von github.com, da ja das Repository jeweils komplett vor liegt.
+Durch die verteilte Natur von git entsteht auch keine Abhängigkeit von github.com, da ja das Repository jeweils komplett vorliegt.
 
 Daher wird der Einsatz von github.com empfohlen. Allerdings soll betont werden, dass dieser nicht verpflichtend ist.
 
