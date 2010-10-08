@@ -1,4 +1,4 @@
-package com.cedarsoft.otec;
+package com.cedarsoft.otec.immutability;
 
 import org.junit.*;
 

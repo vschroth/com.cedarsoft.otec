@@ -1,7 +1,6 @@
-package com.cedarsoft.otec;
+package com.cedarsoft.otec.immutability;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**

@@ -1,4 +1,4 @@
-package com.cedarsoft.otec;
+package com.cedarsoft.otec.immutability;
 
 /**
  * @author Johannes Schneider (<a href="mailto:js@cedarsoft.com">js@cedarsoft.com</a>)
