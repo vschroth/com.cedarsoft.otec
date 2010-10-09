@@ -13,12 +13,6 @@
   <artifactId>otec</artifactId>
   <version>2010-01-SNAPSHOT</version>
 
-  <packaging>pom</packaging>
-
-  <modules>
-    <module>model</module>
-  </modules>
-
   <scm>
     <connection>scm:git:git://git://github.com/jschneider/com.cedarsoft.otec.git</connection>
     <developerConnection>scm:git:ssh://git@github.com:jschneider/com.cedarsoft.otec.git</developerConnection>
@@ -43,12 +37,6 @@
     </dependency>
 
     <!--Test Dependencies-->
-    <dependency>
-      <groupId>com.cedarsoft.commons</groupId>
-      <artifactId>test-utils</artifactId>
-      <version>3.0.0</version>
-      <scope>test</scope>
-    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
