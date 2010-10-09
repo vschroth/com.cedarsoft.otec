@@ -1,0 +1,124 @@
+Immutability
+------------------------------------------
+Ein hohes Ziel bei der Entwicklung von objektorientierter Software ist es, möglichst
+viele Klassen "immutable" (d.h. unveränderlich zu machen).
+
+Mit nicht veränderbare Objekte lässt sich deutlich einfacher arbeiten. Sie können ohne
+weitere Vorsichtsmaßnahmen in jeglichem Kontext benutzt werden, ohne dass die Gefahr
+von Seiteneffekten gegeben ist.
+Diese Vorteile werden umso deutlicher sichtbar, je größer und komplexer eine Applikation ist.
+
+
+Gefahren bei veränderbaren Objekten
+------------------------------------------
+Veränderbare Objekte können jederzeit ihren Zustand ändern. Da man beim Schreiben von Code
+nie wissen kann, welcher andere Code zur Laufzeit Zugriff auf dieses Objekt hat, kann keine
+sichere Aussage über das Laufzeitverhalten bezüglich möglicher Seiteneffekte gemacht werden.
+Dieser Sachverhalt wird in Programmen mit mehrere Threads noch deutlich verschärft.
+
+
+Was sind unveränderliche Objekte?
+------------------------------------------
+Unveränderliche Objekte sind recht einfach zu erstellen: Alle Felder dieser Objekte sind als "final" markiert.
+Damit wird bereits zur Compile-Zeit sicher gestellt, dass keine Änderungen dieser Felder nach der Initialisierung
+mehr erfolgt.
+
+
+Beispiel für änderbare Klasse:
+
+  public class Book {
+    private String isbn;
+    private String title;
+
+    public Book( String isbn, String title ) {
+      this.isbn = isbn;
+      this.title = title;
+    }
+
+    public String getIsbn() {
+      return isbn;
+    }
+
+    public void setIsbn( String isbn ) {
+      this.isbn = isbn;
+    }
+
+    public String getTitle() {
+      return title;
+    }
+
+    public void setTitle( String title ) {
+      this.title = title;
+    }
+  }
+
+
+Die selbe Klasse nun immutable:
+
+  public class Book {
+    private final String isbn;
+    private final String title;
+
+    public Book( String isbn, String title ) {
+      this.isbn = isbn;
+      this.title = title;
+    }
+
+    public String getIsbn() {
+      return isbn;
+    }
+
+    public String getTitle() {
+      return title;
+    }
+  }
+
+
+
+Faustregel Immutability/Sicherbarkeit
+==================================================================
+Jede Anwendung muss ihren aktuellen Zustand in einer Objektstruktur abbilden. Daher sind in jeder Anwendung veränderliche Objekte notwendig.
+Um mögliche Seiteneffekte/Race Conditions zu minimieren, ist es sinnvoll, die Sichtbarkeit der veränderlichen Objekte möglichst weit 
+einzuschränken.
+Dadurch soll verhindert werden, dass kritischer Code sich an möglichst einer Stelle befindet.
+
+
+Die Faustregel lautet daher:
+Sichtbarkeit und Veränderbarkeit stehen sich diametral gegenüber.
+
+Hohe Sichtbarkeit bedingt minimale Änderbarkeit
+Hohe Änderbarkeit bedingt minimale Sichtbarkeit
+
+
+Dies führt zu zwei "guten" Bereichen:
+
+Sichtbarkeit
+
+  ^
+  |XX
+  |XX
+  |
+  |
+  |             XX
+  |             XX
+   ----------------> Veränderbarkeit
+
+
+
+
+Lösung des Konflikts
+==================================================================
+Oftmals ist es notwendig, dass Informationen über Zustand eines Objekts in der gesamten Anwendung zur Verfügung stehen. Gleichzeitig
+bedingt die hohe Sichtbarkeit eine maximale Unveränderlichbarkeit.
+Dieser Konflikt kann dadurch aufgelöst werden, dass die entsprechenden Objekte in zwei Aspekte aufgeteilt werden:
+Zum einen der öffentliche Lese-Zugriff auf den Zustand, der z.B. über ein Interface ermöglicht wird. 
+Zum zweiten der in seiner Sichtbarkeit beschränkte Schreibzugriff, der dann nur an definierten Stellen möglich ist.
+
+
+
+
+
+
+
+
+
