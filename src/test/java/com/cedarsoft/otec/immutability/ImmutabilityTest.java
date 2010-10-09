@@ -49,17 +49,17 @@ public class ImmutabilityTest {
     shoppingCart.getEntries().put( erbarmen, 3 );
     print( shoppingCart );
 
-//    System.out.println( "--- Evil ---" );
-//    printEvil( shoppingCart );
-//    System.out.println( "--- /Evil ---" );
-//
-//    print( shoppingCart );
-//
-//    System.out.println( "--- SuperEvil ---" );
-//    superEvil();
-//    System.out.println( "--- /SuperEvil ---" );
-//
-//    print( shoppingCart );
+    //    System.out.println( "--- Evil ---" );
+    //    printEvil( shoppingCart );
+    //    System.out.println( "--- /Evil ---" );
+    //
+    //    print( shoppingCart );
+    //
+    //    System.out.println( "--- SuperEvil ---" );
+    //    superEvil();
+    //    System.out.println( "--- /SuperEvil ---" );
+    //
+    //    print( shoppingCart );
   }
 
   private void print( ShoppingCart shoppingCart ) {
@@ -75,8 +75,9 @@ public class ImmutabilityTest {
   }
 
   private void superEvil() {
-    erbarmen.setIsbn( "999-999999999" );
-    erbarmen.setTitle( "Ein peinlicher Titel" );
+    //Dieser Code funktioniert nicht mehr, da Book nun immutable ist
+    //    erbarmen.setIsbn( "999-999999999" );
+    //    erbarmen.setTitle( "Ein peinlicher Titel" );
   }
 
   private void printEvil( ShoppingCart shoppingCart ) {

@@ -26,8 +26,8 @@ package com.cedarsoft.otec.immutability;
  * @author Johannes Schneider (<a href="mailto:js@cedarsoft.com">js@cedarsoft.com</a>)
  */
 public class Book {
-  private String isbn;
-  private String title;
+  private final String isbn;
+  private final String title;
 
   public Book( String isbn, String title ) {
     this.isbn = isbn;
@@ -38,15 +38,7 @@ public class Book {
     return isbn;
   }
 
-  public void setIsbn( String isbn ) {
-    this.isbn = isbn;
-  }
-
   public String getTitle() {
     return title;
-  }
-
-  public void setTitle( String title ) {
-    this.title = title;
   }
 }
