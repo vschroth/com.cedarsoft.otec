@@ -22,6 +22,22 @@
 
 Der Ablauf bei der Erstellung einer Lösung für die Aufgaben sollte folgendermaßen aussehen:
 -------------------------------------------------------------------------------------------
+############################################
+# Neue Anleitung (ZIP-basiert)             #
+############################################
+Bitte entsprechend der Anleitung in "eclipse.txt" das Zip-basierte Basis-Projekt herunter laden
+und in Eclipse importieren.
+Die Lösung dann entsprechend implementieren.
+Dann ein ZIP-File (inklusive Parent-Verzeichnis "com.cedarsoft.otec") erstellen und
+an js@cedarsoft.com mailen.
+
+Bitte fals möglich als Absender die FH-Adresse benutzen, damit eine Zuordnung problemlos möglich ist.
+Sollte dies nicht gehen, bitte den Namen deutlich in der Mail vermerken.
+
+
+############################################
+# Alte Anleitung inklusive Git-Integration #
+############################################
 
 Kurzform
 ==============================

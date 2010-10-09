@@ -20,6 +20,40 @@
     Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA.
 ====
 
+############################################
+# Neue Anleitung (ZIP-basiert)             #
+############################################
+
+Installation Eclipse-Plugins
+---------------------------------------
+Entsprechend der Standard-Prozedur von Eclipse über "Help" - "Install new Software" die
+Update-Site von m2eclipse eintragen:
+    http://m2eclipse.sonatype.org/sites/m2e
+Dann die "Maven Integration for Eclipse" installieren.
+Installations-Anleitung: http://m2eclipse.sonatype.org/installing-m2eclipse.html
+
+
+Download des aktuellen Stands des zentralen Projekts:
+---------------------------------------
+http://github.com/jschneider/com.cedarsoft.otec/zipball/master
+
+Bitte dieses Verzeichnis in den Eclipse-Workspace extrahieren (und Verzeichnis in "com.cedarsoft.otec" umbenennen?).
+
+
+Projekt in Eclipse importieren
+---------------------------------------
+File --> Import
+Maven --> Existing Maven Projects
+Root Directory: ${workspace}/com.cedarsoft.otec
+
+Das Maven-Projekt wird automatisch mit allen Modulen angelegt.
+
+
+############################################
+# Alte Anleitung inklusive Git-Integration #
+############################################
+
+
 Eclipse Integration
 ====================================================
   http://wiki.eclipse.org/EGit/User_Guide
